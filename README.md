@@ -2,30 +2,35 @@
 Repository for session
 
 Requirements:
+
 Java 8
+
 Maven setup in machine
 
 Build infra structure services:
 
 Eureka server:
+
 navigate to session/hystrix/
 run below command in command prompt:
 
 mvn clean install
 
-run "mnv spring-boot:run" command in each of the folder in the same order: 
-1: ureka server : eureka-server
+run "mvn spring-boot:run" command in each of the folder in the same order: 
+
+1: Eureka server : eureka-server
 2: Turbine servier : turbine
 3: Hystrix Dashboard to track hystrix command: hystrix-dashboard
 4: Hystrix Example to check : hystrix-example
 
 Build user services:
+
 navigate to session/apps/
 run below command:
 
 mvn clean install
 
-Run "mnv spring-boot:run"  command in the same order in each package:
+Run "mnv spring-boot:run"  command in the same order at each package:
 1: Service with endpoint to get events and customer : customer-service
 2: Service with facade like implementation to get data from different services: customer-client-service
 
